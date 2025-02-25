@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#mango-peti {
+    position: relative;
+    text-align: center; /* Center the content inside the div */
+}
+
+#mango-image {
+    display: none; /* Keep it hidden initially */
+    position: absolute; /* Position it relative to the parent */
+    top: 50%; /* Center it vertically relative to the mango peti */
+    left: 100%; /* Position it to the right of the mango peti */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    margin-left: 115px; /* Add some space between the peti and the mango */
+    animation: slideIn 0.5s forwards; /* Animation effect */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
